@@ -1,6 +1,3 @@
-/* styles.css */
-
-/* Üldised stiilid */
 body {
     font-family: 'Times New Roman', Times, serif;
     margin: 20px;
@@ -10,14 +7,14 @@ body {
 
 h1 {
     text-align: center;
-    color: #14568f; /* Sinine värv matemaatika teema jaoks */
+    color: #14568f;
 }
 
 input[type="number"] {
     width: 200px;
     padding: 5px;
     margin-right: 10px;
-    border: 1px solid #14568f; /* Sinine piirjoon input-ile */
+    border: 1px solid #14568f;
 }
 
 button {
@@ -29,11 +26,27 @@ button {
 }
 
 button:hover {
-    background-color: #0f3d6b; /* Tumedam sinine hover-efektile */
+    background-color: #0f3d6b;
 }
 
 p {
     margin-bottom: 5px;
 }
 
-/* ... muud stiilid, mis järgivad matemaatika teemat ... */
+.nupp {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #14568f;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.centered {
+    text-align: center;
+    margin-top: 20px;
+}
