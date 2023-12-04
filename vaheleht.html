@@ -5,36 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arvsüsteemide Teisendamine</title>
-    <link rel="stylesheet" href="taust.css">
+    <link rel="stylesheet" href="taust.css" id="tavaT">
+    <link rel="stylesheet" href="veebileht_jõulud.css" id="jõuludT" disabled>
+    <link rel="stylesheet" href="vaheleht.css" id="lisastiil" disabled>
 </head>
 
 <body>
-    <h1>Arvsüsteemide Teisendamine</h1>
+    <div class="tekstitaust">
+        <h1>Arvsüsteemide Teisendamine</h1>
 
-    <div>
-        <h2>Kuidas Ise Teisendada Arvsüsteeme?</h2>
-        <p>Kümnendarvust binaar-, heksadetsimaal- ja oktaalsüsteemi arvudeks teisendamine võib toimuda järgmiselt:</p>
+        <div>
+            <h2>Kuidas Ise Teisendada Arvsüsteeme?</h2>
+            <p>Kümnendarvust binaar-, heksadetsimaal- ja oktaalsüsteemi arvudeks teisendamine võib toimuda järgmiselt:</p>
 
-        <ol>
-            <li><strong>Binaarsüsteem (aluseks 2):</strong> Binaarsüsteemis kasutatakse arvude esitamiseks ainult kahte sümbolit: 0 ja 1. Kümnendsüsteemist binaarsüsteemi teisendamine toimub, jagades kümnendsüsteemi arvu korduvalt 2-ga ning märkides üles jäägid tagurpidi loetuna.</li>
-            <li><strong>Heksadetsimaalsüsteem (aluseks 16):</strong> Kümnendsüsteemist heksadetsimaalsüsteemi teisendamiseks jaga kümnendsüsteemi arv korduvalt 16-ga. Kui jääk on 10–15, kasuta tähti A-F vastavalt väärtustele 10–15.</li>
-            <li><strong>Oktaalsüsteem (aluseks 8):</strong> Kümnendsüsteemist oktaalsüsteemi teisendamiseks jaga kümnendsüsteemi arv korduvalt 8-ga ja jälgi vastuseks saadud jääke.</li>
-        </ol>
+            <ol>
+                <li><strong>Binaarsüsteem (aluseks 2):</strong> Binaarsüsteemis kasutatakse arvude esitamiseks ainult kahte sümbolit: 0 ja 1. Kümnendsüsteemist binaarsüsteemi teisendamine toimub, jagades kümnendsüsteemi arvu korduvalt 2-ga ning märkides üles jäägid tagurpidi loetuna.</li>
+                <li><strong>Heksadetsimaalsüsteem (aluseks 16):</strong> Kümnendsüsteemist heksadetsimaalsüsteemi teisendamiseks jaga kümnendsüsteemi arv korduvalt 16-ga. Kui jääk on 10–15, kasuta tähti A-F vastavalt väärtustele 10–15.</li>
+                <li><strong>Oktaalsüsteem (aluseks 8):</strong> Kümnendsüsteemist oktaalsüsteemi teisendamiseks jaga kümnendsüsteemi arv korduvalt 8-ga ja jälgi vastuseks saadud jääke.</li>
+            </ol>
 
-        <h2>Kuidas Teisendada Tagasi Kümnendsüsteemi?</h2>
-        <p>Arvude teisendamine binaar-, heksadetsimaal- või oktaalsüsteemist tagasi kümnendsüsteemi võib toimuda järgmiselt:</p>
-        <p>Iga arvsüsteemi sümbol korrutatakse vastava arvsüsteemi aluse astmes ning saadud väärtused liidetakse kokku.</p>
-        <p>Näiteks:</p>
-        <ul>
-            <li>Binaarsüsteemist tagasi kümnendsüsteemi: 101011 = 1 * 2^5 + 0 * 2^4 + 1 * 2^3 + 0 * 2^2 + 1 * 2^1 + 1 * 2^0 = 43</li>
-            <li>Heksadetsimaalsüsteemist tagasi kümnendsüsteemi: 1F3 = 1 * 16^2 + 15 * 16^1 + 3 * 16^0 = 499</li>
-            <li>Oktaalsüsteemist tagasi kümnendsüsteemi: 765 = 7 * 8^2 + 6 * 8^1 + 5 * 8^0 = 501</li>
-        </ul>
-    </div>
+            <h2>Kuidas Teisendada Tagasi Kümnendsüsteemi?</h2>
+            <p>Arvude teisendamine binaar-, heksadetsimaal- või oktaalsüsteemist tagasi kümnendsüsteemi võib toimuda järgmiselt:</p>
+            <p>Iga arvsüsteemi sümbol korrutatakse vastava arvsüsteemi aluse astmes ning saadud väärtused liidetakse kokku.</p>
+            <p>Näiteks:</p>
+            <ul>
+                <li>Binaarsüsteemist tagasi kümnendsüsteemi: 101011 = 1 * 2^5 + 0 * 2^4 + 1 * 2^3 + 0 * 2^2 + 1 * 2^1 + 1 * 2^0 = 43</li>
+                <li>Heksadetsimaalsüsteemist tagasi kümnendsüsteemi: 1F3 = 1 * 16^2 + 15 * 16^1 + 3 * 16^0 = 499</li>
+                <li>Oktaalsüsteemist tagasi kümnendsüsteemi: 765 = 7 * 8^2 + 6 * 8^1 + 5 * 8^0 = 501</li>
+            </ul>
+        </div>
 
-    <div>
-        <a href="veebileht.html">Tagasi Kalkulaatori Lehele</a>
-        <a href="vaheleht2.html">Testi ennast</a>
+        <div class="centered">
+            <a href="veebileht.html" class="nupp">Tagasi Kalkulaatori Lehele</a>
+            <a href="vaheleht2.html" class="nupp">Testi ennast</a>
+        </div>
+        <script src="vaheleht.js"></script>
     </div>
 </body>
 
