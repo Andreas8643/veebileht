@@ -6,37 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kalkulaator</title>
     <link rel="stylesheet" href="taust.css">
+    <link rel="stylesheet" href="veebileht.css">
 </head>
 
 <body>
-    <h1>Matemaatika Kalkulaator</h1>
+    <h1>Arvutüüpide Kalkulaator</h1>
 
-    <div style="text-align: center;">
-        <label for="decimalInput">Sisesta kümnendsüsteemis arv:</label>
-        <input type="number" id="decimalInput">
-        <button onclick="convert()">Teisenda</button>
+    <div class="centered">
+        <div>
+            <label for="decimalInput">Sisesta kümnendsüsteemis arv:</label>
+            <input type="number" id="decimalInput" oninput="convertAll()">
+        </div>
+        <div>
+            <label for="binaryInput">Binaarsüsteemis:</label>
+            <input type="text" id="binaryInput" oninput="convert('binaryInput', 2)">
+        </div>
+        <div>
+            <label for="hexInput">Heksadetsimaalsüsteemis:</label>
+            <input type="text" id="hexInput" oninput="convert('hexInput', 16)">
+        </div>
+        <div>
+            <label for="octalInput">Oktaalsüsteemis:</label>
+            <input type="text" id="octalInput" oninput="convert('octalInput', 8)">
+        </div>
     </div>
 
-    <div style="text-align: center; margin-top: 20px;">
-        <p>Binäärsüsteemis: <span id="binary"></span></p>
-        <p>Heksadetsimaalsüsteemis: <span id="hex"></span></p>
-        <p>Oktaalsüsteemis: <span id="octal"></span></p>
-    </div>
-
-    <div style="text-align: center; margin-top: 20px;">
-        <a href="vaheleht.html">Edasi Järgmisele Lehele</a>
+    <div class="centered">
+        <a href="vaheleht.html" class="nupp">Edasi Järgmisele Lehele</a>
     </div>
 
     <script>
-        function convert() {
+        function convertAll() {
             const decimalInput = document.getElementById('decimalInput').value;
-            const binary = (+decimalInput).toString(2); 
-            const hex = (+decimalInput).toString(16).toUpperCase(); 
-            const octal = (+decimalInput).toString(8); 
+            document.getElementById('binaryInput').value = (+decimalInput).toString(2);
+            document.getElementById('hexInput').value = (+decimalInput).toString(16).toUpperCase();
+            document.getElementById('octalInput').value = (+decimalInput).toString(8);
+        }
 
-            document.getElementById('binary').innerText = binary;
-            document.getElementById('hex').innerText = hex;
-            document.getElementById('octal').innerText = octal;
+        function convert(inputId, base) {
+            const inputValue = document.getElementById(inputId).value;
+            const decimalValue = parseInt(inputValue, base);
+            
+            if (!isNaN(decimalValue)) {
+                document.getElementById('decimalInput').value = decimalValue;
+                convertAll();
+            }
         }
     </script>
 </body>
