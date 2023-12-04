@@ -1,4 +1,4 @@
-# veebileht: Masinkoodi kalkulaator
+# Veebileht: Masinkoodi kalkulaator
 
 Tere tulemast meie interaktiivsesse kümnend-, kahend-, kaheksand- ja kuueteistkümnendsüsteemi teisendajasse! See veebileht on teie sihtkoht kümnendarvude hõlpsaks teisendamiseks kahend-, kaheksand- ja kuueteistkümnendarvudeks. Meie kasutajasõbralik kalkulaator mitte ainult ei tee konversioone kiiresti ühe nupuvajutusega, vaid pakume ka põhjalikku juhendit nende konversioonide käsitsi tegemiseks. Õppige samm-sammult protsessi ja parandage oma arusaamist numbrisüsteemidest.
 
