@@ -1,3 +1,7 @@
-# veebileht
+# veebileht: Masinkoodi kalkulaator
 
-siin on veebilehe värk.
+Tere tulemast meie interaktiivsesse kümnend-, kahend-, kaheksand- ja kuueteistkümnendsüsteemi teisendajasse! See veebileht on teie sihtkoht kümnendarvude hõlpsaks teisendamiseks kahend-, kaheksand- ja kuueteistkümnendarvudeks. Meie kasutajasõbralik kalkulaator mitte ainult ei tee konversioone kiiresti ühe nupuvajutusega, vaid pakume ka põhjalikku juhendit nende konversioonide käsitsi tegemiseks. Õppige samm-sammult protsessi ja parandage oma arusaamist numbrisüsteemidest.
+
+Kuid see pole veel kõik! Esitage endale väljakutse meie kaasahaarava viktoriini funktsiooniga, kus kalkulaator genereerib kahend-, kuueteistkümnend- või kaheksandkoodina numbri ja teie ülesanne on see kümnendkoodiks tagasi dekodeerida. Pange oma oskused proovile ja täiendage oma teadmisi lõbusal ja interaktiivsel viisil. Ükskõik, kas olete üliõpilane, kes soovib omandada põhitõdesid, või entusiast, kes otsib meeldivat õppimiskogemust, on meie veebisait loodud teie vajadustele vastavaks. Alustage uurimist ja muutke numbrite teisendamine imelihtsaks!
+
+
