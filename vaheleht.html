@@ -1,49 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Binary to Decimal Converter</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 50px;
-        }
-
-        input {
-            padding: 8px;
-            margin: 8px;
-        }
-
-        button {
-            padding: 8px;
-            margin: 8px;
-            cursor: pointer;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 4px;
-        }
-
-        #result {
-            font-size: 18px;
-            margin-top: 15px;
-        }
-    </style>
+    <title>Arvsüsteemide Teisendamine</title>
+    <link rel="stylesheet" href="taust.css">
 </head>
-<body>
-    <h2>Binary to Decimal Converter</h2>
-    <input type="text" id="binaryInput" placeholder="Enter binary number">
-    <button onclick="convertBinaryToDecimal()">Convert</button>
-    <div id="result"></div>
 
-    <script>
-        function convertBinaryToDecimal() {
-            var binaryInput = document.getElementById("binaryInput").value;
-            var decimalResult = parseInt(binaryInput, 2);
-            document.getElementById("result").innerHTML = "Decimal: " + (isNaN(decimalResult) ? "Invalid input" : decimalResult);
-        }
-    </script>
+<body>
+    <h1>Arvsüsteemide Teisendamine</h1>
+
+    <div>
+        <h2>Kuidas Ise Teisendada Arvsüsteeme?</h2>
+        <p>Kümnendarvust binaar-, heksadetsimaal- ja oktaalsüsteemi arvudeks teisendamine võib toimuda järgmiselt:</p>
+
+        <ol>
+            <li><strong>Binaarsüsteem (aluseks 2):</strong> Binaarsüsteemis kasutatakse arvude esitamiseks ainult kahte sümbolit: 0 ja 1. Kümnendsüsteemist binaarsüsteemi teisendamine toimub, jagades kümnendsüsteemi arvu korduvalt 2-ga ning märkides üles jäägid tagurpidi loetuna.</li>
+            <li><strong>Heksadetsimaalsüsteem (aluseks 16):</strong> Kümnendsüsteemist heksadetsimaalsüsteemi teisendamiseks jaga kümnendsüsteemi arv korduvalt 16-ga. Kui jääk on 10–15, kasuta tähti A-F vastavalt väärtustele 10–15.</li>
+            <li><strong>Oktaalsüsteem (aluseks 8):</strong> Kümnendsüsteemist oktaalsüsteemi teisendamiseks jaga kümnendsüsteemi arv korduvalt 8-ga ja jälgi vastuseks saadud jääke.</li>
+        </ol>
+
+        <h2>Kuidas Teisendada Tagasi Kümnendsüsteemi?</h2>
+        <p>Arvude teisendamine binaar-, heksadetsimaal- või oktaalsüsteemist tagasi kümnendsüsteemi võib toimuda järgmiselt:</p>
+        <p>Iga arvsüsteemi sümbol korrutatakse vastava arvsüsteemi aluse astmes ning saadud väärtused liidetakse kokku.</p>
+        <p>Näiteks:</p>
+        <ul>
+            <li>Binaarsüsteemist tagasi kümnendsüsteemi: 101011 = 1 * 2^5 + 0 * 2^4 + 1 * 2^3 + 0 * 2^2 + 1 * 2^1 + 1 * 2^0 = 43</li>
+            <li>Heksadetsimaalsüsteemist tagasi kümnendsüsteemi: 1F3 = 1 * 16^2 + 15 * 16^1 + 3 * 16^0 = 499</li>
+            <li>Oktaalsüsteemist tagasi kümnendsüsteemi: 765 = 7 * 8^2 + 6 * 8^1 + 5 * 8^0 = 501</li>
+        </ul>
+    </div>
+
+    <div>
+        <a href="veebileht.html">Tagasi Kalkulaatori Lehele</a>
+        <a href="vaheleht2.html">Testi ennast</a>
+    </div>
 </body>
+
 </html>
