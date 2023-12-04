@@ -1,0 +1,72 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 20px;
+    background-color: #f0f0f0;
+    color: #ffffff;
+    background-image: url('https://wallpapers.com/images/hd/christmas-powerpoint-background-1920-x-1080-wea6ajv4vq31e6k5.jpg');
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    color: #c62828;
+}
+
+input[type="number"] {
+    width: 200px;
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #c62828;
+}
+
+button {
+    padding: 8px 15px;
+    background-color: #c62828;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #8e0000;
+}
+
+p {
+    margin-bottom: 5px;
+}
+
+.nupp {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #c62828;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.centered {
+    text-align: center;
+    margin-top: 20px;
+}
+
+h1,
+input[type="number"],
+button,
+.nupp {
+    background-color: #c62828;
+    color: white;
+}
+
+h1 {
+    text-shadow: 2px 2px 4px #000000;
+}
+
+button:hover,
+.nupp:hover {
+    background-color: #8e0000;
+}
