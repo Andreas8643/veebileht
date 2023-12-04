@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kalkulaator</title>
-    <link rel="stylesheet" href="taust.css">
-    <link rel="stylesheet" href="veebileht.css">
+    <link rel="stylesheet" href="taust.css" id="tavaT">
+    <link rel="stylesheet" href="veebileht_jõulud.css" id="jõuludT" disabled>
 </head>
 
 <body>
@@ -29,30 +29,11 @@
             <label for="octalInput">Oktaalsüsteemis:</label>
             <input type="text" id="octalInput" oninput="convert('octalInput', 8)">
         </div>
+
+        <a href="vaheleht.html" class="nupp">Õpi ise teisendama</a>
     </div>
 
-    <div class="centered">
-        <a href="vaheleht.html" class="nupp">Edasi Järgmisele Lehele</a>
-    </div>
-
-    <script>
-        function convertAll() {
-            const decimalInput = document.getElementById('decimalInput').value;
-            document.getElementById('binaryInput').value = (+decimalInput).toString(2);
-            document.getElementById('hexInput').value = (+decimalInput).toString(16).toUpperCase();
-            document.getElementById('octalInput').value = (+decimalInput).toString(8);
-        }
-
-        function convert(inputId, base) {
-            const inputValue = document.getElementById(inputId).value;
-            const decimalValue = parseInt(inputValue, base);
-            
-            if (!isNaN(decimalValue)) {
-                document.getElementById('decimalInput').value = decimalValue;
-                convertAll();
-            }
-        }
-    </script>
+    <script src="veebileht.js"></script>
 </body>
 
 </html>
