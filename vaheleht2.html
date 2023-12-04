@@ -1,27 +1,24 @@
 <!DOCTYPE html>
-<html lang="et">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arvu Teisendamise Test</title>
-    <link rel="stylesheet" href="taust.css">
-    <link rel="stylesheet" href="korvalleht2style.css">
-
+    <title>Juhuslik binaar- või oktaalarv</title>
+    <link rel="stylesheet" href="veebileht_jõulud.css" id="jõuludT" disabled>
+    <link rel="stylesheet" href="taust.css" id="tavaT">
+    <link rel="stylesheet" href="vaheleht2.css">
 </head>
-
 <body>
-    <h1>Arvu Teisendamise Test</h1>
-
-    <div>
-        <h2>Teisenda järgnev arv kümnendsüsteemi:</h2>
-        <p id="question"></p>
-        <label for="answer">Sinu Vastus:</label>
-        <input type="text" id="answer" onkeypress="handleKeyPress(event)">
+    <div class="kast" id="questionBox">
+        <h2>TEST</h2>
+        <div id="question"></div>
+        <input type="text" id="answer" placeholder="kümnendsüsteemis" onkeypress="handleKeyPress(event)">
         <button onclick="checkAnswer()">Kontrolli</button>
         <p id="result"></p>
-        <button onclick="generateQuestion()">Järgmine Küsimus</button>
+        <div>
+            <a href="veebileht.html" class="nupp">Kalkulaatori Lehele</a>
+            <a href="vaheleht.html" class="nupp">Tagasi õppima</a>
+        </div>
     </div>
-
-    <script src="korvalleht2skript.js" defer></script>
+    <script src="vaheleht2.js"></script>
 </body>
+</html>
