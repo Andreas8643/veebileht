@@ -1,15 +1,27 @@
-
 <!DOCTYPE html>
 <html lang="et">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leht3</title>
-</head>
-<body>
-    <h1>kolmas leht ka</h1>
-    <p>ikka vägga väga lahe</p>
+    <title>Arvu Teisendamise Test</title>
+    <link rel="stylesheet" href="taust.css">
+    <link rel="stylesheet" href="korvalleht2style.css">
 
-    <a href="veebileht.html">Tagasi Esimesele Lehele</a>
+</head>
+
+<body>
+    <h1>Arvu Teisendamise Test</h1>
+
+    <div>
+        <h2>Teisenda järgnev arv kümnendsüsteemi:</h2>
+        <p id="question"></p>
+        <label for="answer">Sinu Vastus:</label>
+        <input type="text" id="answer" onkeypress="handleKeyPress(event)">
+        <button onclick="checkAnswer()">Kontrolli</button>
+        <p id="result"></p>
+        <button onclick="generateQuestion()">Järgmine Küsimus</button>
+    </div>
+
+    <script src="korvalleht2skript.js" defer></script>
 </body>
-</html>
