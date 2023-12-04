@@ -4,69 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Me armastame projekte</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        .bordered-table {
-            border: 1px solid black;
-        }
-        .bordered-table td {
-            background-color: #f2f2f2; 
-            padding: 8px;
-        }
-        .bordered-table {
-        border-collapse: collapse;
-        width: 100%;
-        }
-
-        .bordered-table td {
-        border: 1px solid black;
-        background-color: #f2f2f2;
-        padding: 8px;
-        }
-    
-    </style>
+    <title>Kalkulaator</title>
+    <link rel="stylesheet" href="taust.css">
 </head>
 
 <body>
-    <h1>Miks meile meeldib projekt</h1>
+    <h1>Matemaatika Kalkulaator</h1>
 
-<main>
-    <p>Võtab aega</p>
-<p><br></p>
-<a></a>
-<img>
-<h2>Aga ikka miks?</h2>
-<ul>
-    <li>Projekt on lahe ja värki ja võtab aega</li>
-    <li>Miks on projekt lahe
-      <ul>
-        <li>lahe ja värki</li>
-        <li>tudengitel aega liiga palju</li>
-        <li>ja me oleme tudengid</li>
-      </ul>
-    </li>
-  </ul>
-  <table class="bordered-table">
-</table>
-  <a href="vaheleht.html">Edasi Järgmisele Lehele</a>
-</main>
+    <div style="text-align: center;">
+        <label for="decimalInput">Sisesta kümnendsüsteemis arv:</label>
+        <input type="number" id="decimalInput">
+        <button onclick="convert()">Teisenda</button>
+    </div>
 
-<footer>
-    <p>
-        <table class="bordered-table">
-            <tr>
-                <td>veidi css-i</td>
-                <td>veel css-i</td>
-            </tr>
-            <tr>
-                <td>O</td>
-                <td>O</td>
-            </tr>
+    <div style="text-align: center; margin-top: 20px;">
+        <p>Binäärsüsteemis: <span id="binary"></span></p>
+        <p>Heksadetsimaalsüsteemis: <span id="hex"></span></p>
+        <p>Oktaalsüsteemis: <span id="octal"></span></p>
+    </div>
 
-    </p>
-</footer>
+    <div style="text-align: center; margin-top: 20px;">
+        <a href="vaheleht.html">Edasi Järgmisele Lehele</a>
+    </div>
 
+    <script>
+        function convert() {
+            const decimalInput = document.getElementById('decimalInput').value;
+            const binary = (+decimalInput).toString(2); 
+            const hex = (+decimalInput).toString(16).toUpperCase(); 
+            const octal = (+decimalInput).toString(8); 
+
+            document.getElementById('binary').innerText = binary;
+            document.getElementById('hex').innerText = hex;
+            document.getElementById('octal').innerText = octal;
+        }
+    </script>
 </body>
 
 </html>
